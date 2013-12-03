@@ -1,3 +1,46 @@
-<2013-12-02 11:17:40> <nioEventLoopGroup-4-1><INFO> connect --TellMeMsgHandler#0
-<2013-12-02 11:17:40> <main><INFO> tellmeserver start succ ip:localhost|port:9407
-<2013-12-02 11:18:25> <nioEventLoopGroup-4-1><INFO>  close--TellMeMsgHandler#0
+<2013-12-03 15:58:56> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Tue Dec 03 15:58:56 CST 2013]; root of context hierarchy
+<2013-12-03 15:58:56> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 15:58:56> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 15:58:56> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 15:58:56> <main><INFO> Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc0f2e5: defining beans [propertyConfigurer,tellmeserver,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:04:06> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Tue Dec 03 16:04:06 CST 2013]; root of context hierarchy
+<2013-12-03 16:04:06> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:04:06> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:04:07> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:04:07> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@788ab708: defining beans [propertyConfigurer,tellmeserver,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:04:07> <main><INFO> Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@788ab708: defining beans [propertyConfigurer,tellmeserver,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:04:47> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Tue Dec 03 16:04:47 CST 2013]; root of context hierarchy
+<2013-12-03 16:04:47> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:04:47> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:04:47> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:04:47> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@788ab708: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:07:18> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Tue Dec 03 16:07:18 CST 2013]; root of context hierarchy
+<2013-12-03 16:07:18> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:07:18> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:07:18> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:07:18> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@788ab708: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:07:45> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7776cad3: startup date [Tue Dec 03 16:07:45 CST 2013]; root of context hierarchy
+<2013-12-03 16:07:45> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:07:45> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:07:45> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:07:45> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1532021a: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:10:55> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19b8e059: startup date [Tue Dec 03 16:10:55 CST 2013]; root of context hierarchy
+<2013-12-03 16:10:55> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:10:55> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:10:55> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:10:55> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5af6ac0b: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:13:06> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Tue Dec 03 16:13:06 CST 2013]; root of context hierarchy
+<2013-12-03 16:13:06> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:13:06> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:13:06> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:13:06> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@788ab708: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:18:27> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@38910040: startup date [Tue Dec 03 16:18:27 CST 2013]; root of context hierarchy
+<2013-12-03 16:18:27> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:18:28> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:18:28> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:18:28> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@789934d4: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy
+<2013-12-03 16:22:33> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Tue Dec 03 16:22:33 CST 2013]; root of context hierarchy
+<2013-12-03 16:22:33> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-03 16:22:33> <main><INFO> Loading XML bean definitions from class path resource [mongodb.xml]
+<2013-12-03 16:22:33> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-03 16:22:33> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@788ab708: defining beans [propertyConfigurer,usermsgdb,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,org.springframework.beans.factory.config.CustomEditorConfigurer#2,usermsgfactory,usermsgMongoTemplate,mongDaoImpl]; root of factory hierarchy

@@ -17,12 +17,15 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 import io.netty.util.CharsetUtil;
+import io.netty.util.concurrent.DefaultEventExecutorGroup;
+import io.netty.util.concurrent.EventExecutorGroup;
 
 public class TellMeServer {
 	public String host;
 	public int port;
 	public int timeout;
 	public static int MAXLEN=10;
+	public int maxthread=100;
 	public String getHost() {
 		return host;
 	}
@@ -47,6 +50,7 @@ public class TellMeServer {
 	protected static final int BIZTHREADSIZE = 4;
 	final EventLoopGroup bossGroup = new NioEventLoopGroup(BIZGROUPSIZE);
 	final EventLoopGroup workerGroup = new NioEventLoopGroup(BIZTHREADSIZE);
+	EventExecutorGroup eventgroup=new DefaultEventExecutorGroup(maxthread);
 	public void start()
 	{
 
@@ -64,7 +68,7 @@ public class TellMeServer {
 			    pipeline.addLast("idleStateHandler",
 						new IdleStateHandler(getTimeout(), 0, 0));
 			    pipeline.addLast("tiemoutHandler",new TellMeTimeOutHandler());
-				pipeline.addLast(new TellMeMsgHandler());
+				pipeline.addLast(eventgroup,"clienthandler",new TellMeMsgHandler());
 			}
 		});
 

@@ -25,9 +25,8 @@
 		</property>
 		<property name="fileEncoding" value="utf-8" />
 	</bean>
-	<bean id="tellmeserver" class="com.server.tellme.server.TellMeServer">
-	    <property name="host" value="${tellmeserver.host}"/>
-	    <property name="port" value="${tellmeserver.port}"/>
-	    <property name="timeout" value="${tellmeserver.timeout}"/>	    
+	<import resource="mongodb.xml"/>
+	<bean id="mongDaoImpl" class="com.tcyclient.tellme.mongo.MongDaoImpl">
+	  <property name="mongo" ref="usermsgMongoTemplate"></property>	    
 	</bean>
 </beans>

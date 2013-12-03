@@ -16,5 +16,72 @@ public class TellMeMessageData implements Serializable {
 	public User user;
 	public List<MsgContent> msgcontent;
 	public List<MsgGoal> msggoal;
+	public long showtime;
+	public int regutype=0x0001;//定期类型
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public List<MsgContent> getMsgcontent() {
+		return msgcontent;
+	}
+	public void setMsgcontent(List<MsgContent> msgcontent) {
+		this.msgcontent = msgcontent;
+	}
+	public List<MsgGoal> getMsggoal() {
+		return msggoal;
+	}
+	public void setMsggoal(List<MsgGoal> msggoal) {
+		this.msggoal = msggoal;
+	}
+	public long getShowtime() {
+		return showtime;
+	}
+	public void setShowtime(long showtime) {
+		this.showtime = showtime;
+	}
+	public int getRegutype() {
+		return regutype;
+	}
+	public void setRegutype(int regutype) {
+		this.regutype = regutype;
+	}
+	public int getMouth() {
+		return mouth;
+	}
+	public void setMouth(int mouth) {
+		this.mouth = mouth;
+	}
+	public int getDay() {
+		return day;
+	}
+	public void setDay(int day) {
+		this.day = day;
+	}
+	public int getHour() {
+		return hour;
+	}
+	public void setHour(int hour) {
+		this.hour = hour;
+	}
+	public int getMinu() {
+		return minu;
+	}
+	public void setMinu(int minu) {
+		this.minu = minu;
+	}
+	public int getSecond() {
+		return second;
+	}
+	public void setSecond(int second) {
+		this.second = second;
+	}
+	public int mouth;
+	public int day;
+	public int hour;
+	public int minu;
+	public int second;
 
 }

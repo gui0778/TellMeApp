@@ -1,11 +1,28 @@
 package com.server.tellme.entity;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
 public class User implements Serializable {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1996729894538778495L;
+	public String id;
+	public String name;
+	public String passwd;
+	public String email;
+	public long registertime;	
+	public UserLocation userloction;
+	public Map<String,Object> setinfo=new HashMap<String,Object>();;
+	public List<UserService> userservice=new LinkedList<UserService>();//open which service
+	public List<BindAccount> userbind=new LinkedList<BindAccount>();
+	public Map<String,Object> linehandler=new HashMap<String,Object>();
+	public Map<String,Object> friendset=new HashMap<String,Object>();//other one use 
+	public String def_prefix="";
 	public String getName() {
 		return name;
 	}
@@ -23,12 +40,6 @@ public class User implements Serializable {
 	}
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	public String getBindphone() {
-		return bindphone;
-	}
-	public void setBindphone(String bindphone) {
-		this.bindphone = bindphone;
 	}
 	public long getRegistertime() {
 		return registertime;
@@ -57,17 +68,6 @@ public class User implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1996729894538778495L;
-	public String name;
-	public String passwd;
-	public String email;
-	public String bindphone;
-	public long registertime;
-	public UserLocation userloction;
-	public Map<String,Object> setinfo;
-	public List<UserService> userservice;
+
 
 }

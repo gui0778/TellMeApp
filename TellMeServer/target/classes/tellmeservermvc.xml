@@ -30,4 +30,8 @@
 	    <property name="port" value="${tellmeserver.port}"/>
 	    <property name="timeout" value="${tellmeserver.timeout}"/>	    
 	</bean>
+		<import resource="mongodb.xml"/>
+	<bean id="mongDaoImpl" class="com.tcyclient.tellme.mongo.MongDaoImpl">
+	  <property name="mongo" ref="usermsgMongoTemplate"></property>	    
+	</bean>
 </beans>

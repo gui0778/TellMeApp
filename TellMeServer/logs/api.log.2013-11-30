@@ -1,0 +1,520 @@
+<2013-11-30 10:40:25> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 10:40:25 CST 2013]; root of context hierarchy
+<2013-11-30 10:40:25> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 10:44:24> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 10:44:24 CST 2013]; root of context hierarchy
+<2013-11-30 10:44:24> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 10:44:24> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 10:44:24> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 10:46:20> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 10:46:20 CST 2013]; root of context hierarchy
+<2013-11-30 10:46:20> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 10:46:20> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 10:46:20> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 10:46:20> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 10:48:57> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 10:48:57 CST 2013]; root of context hierarchy
+<2013-11-30 10:48:57> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 10:48:57> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 10:48:57> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 10:48:57> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 10:49:06> <nioEventLoopGroup-3-1><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:50:28> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Sat Nov 30 10:50:28 CST 2013]; root of context hierarchy
+<2013-11-30 10:50:28> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 10:50:28> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 10:50:28> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 10:50:28> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 10:50:35> <nioEventLoopGroup-3-1><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:51:21> <nioEventLoopGroup-3-1><INFO> client closeTellMeMsgHandler#0
+<2013-11-30 10:53:30> <nioEventLoopGroup-3-2><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:53:30> <nioEventLoopGroup-3-3><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:55:21> <nioEventLoopGroup-3-2><INFO> client closeTellMeMsgHandler#0
+<2013-11-30 10:55:21> <nioEventLoopGroup-3-3><INFO> client closeTellMeMsgHandler#0
+<2013-11-30 10:55:24> <nioEventLoopGroup-3-4><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:55:24> <nioEventLoopGroup-3-1><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:56:02> <nioEventLoopGroup-3-1><INFO> client closeTellMeMsgHandler#0
+<2013-11-30 10:56:02> <nioEventLoopGroup-3-4><INFO> client closeTellMeMsgHandler#0
+<2013-11-30 10:56:45> <nioEventLoopGroup-3-2><INFO> client connectTellMeMsgHandler#0
+<2013-11-30 10:58:40> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 10:58:40 CST 2013]; root of context hierarchy
+<2013-11-30 10:58:40> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 10:58:41> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 10:58:41> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ff82982: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 10:58:41> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 10:58:43> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 10:59:12> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 10:59:18> <nioEventLoopGroup-3-2><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:01:49> <nioEventLoopGroup-3-2><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 11:01:56> <nioEventLoopGroup-3-3><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:04:00> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7776cad3: startup date [Sat Nov 30 11:04:00 CST 2013]; root of context hierarchy
+<2013-11-30 11:04:00> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:04:00> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:04:00> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@77bf7b23: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:04:01> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:04:14> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:04:20> <nioEventLoopGroup-3-1><INFO> decoder startjava.nio.DirectByteBuffer[pos=0 lim=28 cap=28]
+<2013-11-30 11:04:21> <nioEventLoopGroup-3-1><INFO> decoder start1077936145
+<2013-11-30 11:04:28> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@9be1041
+<2013-11-30 11:08:23> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17fe1feb: startup date [Sat Nov 30 11:08:23 CST 2013]; root of context hierarchy
+<2013-11-30 11:08:23> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:08:24> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:08:24> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3c2d7440: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:08:24> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:08:30> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:08:49> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 11:09:00> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2ce1899b: startup date [Sat Nov 30 11:09:00 CST 2013]; root of context hierarchy
+<2013-11-30 11:09:00> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:09:00> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:09:00> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c2b349d: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:09:00> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:09:05> <nioEventLoopGroup-3-1><WARN> Failed to initialize a channel. Closing: [id: 0x4a348c6b, /192.168.1.229:54999 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: initialBytesToStrip must be a non-negative integer: -4
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:318)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:58)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:09:15> <nioEventLoopGroup-3-2><WARN> Failed to initialize a channel. Closing: [id: 0x5013dbe8, /192.168.1.229:55002 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: initialBytesToStrip must be a non-negative integer: -4
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:318)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:58)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:09:25> <nioEventLoopGroup-3-3><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:09:34> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 11:09:34 CST 2013]; root of context hierarchy
+<2013-11-30 11:09:34> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:09:34> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:09:34> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:09:35> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:09:38> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:10:30> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 11:10:53> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Sat Nov 30 11:10:53 CST 2013]; root of context hierarchy
+<2013-11-30 11:10:53> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:10:53> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:10:53> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28e70e30: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:10:53> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:10:57> <nioEventLoopGroup-3-1><WARN> Failed to initialize a channel. Closing: [id: 0x6dd1b99d, /192.168.1.229:55024 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: lengthFieldLength must be either 1, 2, 3, 4, or 8: 0
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:326)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:213)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:58)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:11:07> <nioEventLoopGroup-3-2><WARN> Failed to initialize a channel. Closing: [id: 0xd906d7c8, /192.168.1.229:55026 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: lengthFieldLength must be either 1, 2, 3, 4, or 8: 0
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:326)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:213)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:58)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:11:15> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Sat Nov 30 11:11:15 CST 2013]; root of context hierarchy
+<2013-11-30 11:11:15> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:11:15> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:11:15> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:11:16> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:11:21> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:11:53> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 11:16:40> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 11:16:40 CST 2013]; root of context hierarchy
+<2013-11-30 11:16:40> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:16:40> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:16:40> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:16:40> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:16:45> <nioEventLoopGroup-3-1><WARN> Failed to initialize a channel. Closing: [id: 0x6b9bd1cf, /192.168.1.229:55142 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:16:55> <nioEventLoopGroup-3-2><WARN> Failed to initialize a channel. Closing: [id: 0x603472c0, /192.168.1.229:55144 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:17:06> <nioEventLoopGroup-3-3><WARN> Failed to initialize a channel. Closing: [id: 0xb8fd6e27, /192.168.1.229:55147 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:17:16> <nioEventLoopGroup-3-4><WARN> Failed to initialize a channel. Closing: [id: 0x41e4cc7b, /192.168.1.229:55150 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:17:26> <nioEventLoopGroup-3-1><WARN> Failed to initialize a channel. Closing: [id: 0x20f360f5, /192.168.1.229:55153 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:17:36> <nioEventLoopGroup-3-2><WARN> Failed to initialize a channel. Closing: [id: 0xc79232c7, /192.168.1.229:55155 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:17:46> <nioEventLoopGroup-3-3><WARN> Failed to initialize a channel. Closing: [id: 0x89aad660, /192.168.1.229:55160 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:17:56> <nioEventLoopGroup-3-4><WARN> Failed to initialize a channel. Closing: [id: 0xf1d4be09, /192.168.1.229:55167 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:18:06> <nioEventLoopGroup-3-1><WARN> Failed to initialize a channel. Closing: [id: 0xa55d4e5a, /192.168.1.229:55169 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:18:16> <nioEventLoopGroup-3-2><WARN> Failed to initialize a channel. Closing: [id: 0xab90ea57, /192.168.1.229:55172 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:18:26> <nioEventLoopGroup-3-3><WARN> Failed to initialize a channel. Closing: [id: 0xd6360439, /192.168.1.229:55175 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:18:36> <nioEventLoopGroup-3-4><WARN> Failed to initialize a channel. Closing: [id: 0x209adb2a, /192.168.1.229:55177 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:18:47> <nioEventLoopGroup-3-1><WARN> Failed to initialize a channel. Closing: [id: 0x0b6dbb85, /192.168.1.229:55180 => /192.168.1.229:9407]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: -1
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:59)
+	at com.server.tellme.server.TellMeServer$1.initChannel(TellMeServer.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRegistered(DefaultChannelHandlerContext.java:157)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRegistered(DefaultChannelHandlerContext.java:143)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:730)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:441)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:373)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:417)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:348)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+<2013-11-30 11:18:52> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 11:18:52 CST 2013]; root of context hierarchy
+<2013-11-30 11:18:52> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 11:18:52> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 11:18:52> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 11:18:52> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 11:18:59> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 11:18:59> <nioEventLoopGroup-3-1><INFO> decoder startjava.nio.DirectByteBuffer[pos=0 lim=17 cap=17]
+<2013-11-30 11:18:59> <nioEventLoopGroup-3-1><INFO> decoder start1077936145
+<2013-11-30 11:18:59> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@5e6214f5
+<2013-11-30 11:21:23> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 12:06:55> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c121f1d: startup date [Sat Nov 30 12:06:55 CST 2013]; root of context hierarchy
+<2013-11-30 12:06:55> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 12:06:55> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 12:06:55> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 12:07:03> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 12:07:03 CST 2013]; root of context hierarchy
+<2013-11-30 12:07:03> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 12:07:04> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 12:07:04> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ff82982: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 12:07:04> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 12:08:14> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 12:08:14> <nioEventLoopGroup-3-1><WARN> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.UnsupportedOperationException: direct buffer
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:99)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:332)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:318)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:173)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:332)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:318)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:100)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:478)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:447)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:341)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.UnsupportedOperationException: direct buffer
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.array(UnpooledUnsafeDirectByteBuf.java:189)
+	at com.server.tellme.server.TellMeDecoderHandler.decode(TellMeDecoderHandler.java:20)
+	at com.server.tellme.server.TellMeDecoderHandler.decode(TellMeDecoderHandler.java:1)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:89)
+	... 12 more
+<2013-11-30 12:08:14> <nioEventLoopGroup-3-1><INFO> client exceptionTellMeMsgHandler#0
+<2013-11-30 12:15:10> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 12:15:10 CST 2013]; root of context hierarchy
+<2013-11-30 12:15:10> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 12:15:10> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 12:15:10> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d6d2633: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 12:15:10> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 12:15:15> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 12:15:15> <nioEventLoopGroup-3-1><INFO> msg len--21
+<2013-11-30 12:15:15> <nioEventLoopGroup-3-1><INFO> msg data--@@ 5)�   P s�
+@@ 
+<2013-11-30 12:15:15> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@4edc41c5
+<2013-11-30 12:16:29> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19b8e059: startup date [Sat Nov 30 12:16:29 CST 2013]; root of context hierarchy
+<2013-11-30 12:16:29> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 12:16:30> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 12:16:30> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28e70e30: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 12:16:30> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> msg len--21
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> msg data--
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 17
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 53
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 41
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> -112
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 5
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 80
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 115
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> -100
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 13
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 10
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> 17
+<2013-11-30 12:16:36> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@1395dd5b
+<2013-11-30 12:18:14> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 12:18:14 CST 2013]; root of context hierarchy
+<2013-11-30 12:18:14> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 12:18:14> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 12:18:14> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ff82982: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 12:18:14> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> msg len--21
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> msg data--
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 17
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 53
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 41
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> -112
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 5
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 80
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 115
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> -100
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 13
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 10
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 64
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 0
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 17
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> 64640175341-1120005800115-10013106464017
+<2013-11-30 12:18:20> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@744d76b4
+<2013-11-30 12:21:41> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 12:21:54> <nioEventLoopGroup-3-2><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 12:21:54> <nioEventLoopGroup-3-2><INFO> client close--TellMeMsgHandler#0
+<2013-11-30 12:22:03> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37f5d386: startup date [Sat Nov 30 12:22:03 CST 2013]; root of context hierarchy
+<2013-11-30 12:22:03> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-11-30 12:22:04> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-11-30 12:22:04> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ff82982: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-11-30 12:22:04> <main><INFO> tellmeserver start succ ip:192.168.1.229|port:9407
+<2013-11-30 12:22:25> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-11-30 12:22:25> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0

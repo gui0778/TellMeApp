@@ -1,0 +1,20 @@
+<2013-12-02 11:17:31> <main><INFO> Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17fe1feb: startup date [Mon Dec 02 11:17:31 CST 2013]; root of context hierarchy
+<2013-12-02 11:17:31> <main><INFO> Loading XML bean definitions from class path resource [tellmeservermvc.xml]
+<2013-12-02 11:17:32> <main><INFO> Loading properties file from class path resource [conf.properties]
+<2013-12-02 11:17:32> <main><INFO> Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3c2d7440: defining beans [propertyConfigurer,tellmeserver]; root of factory hierarchy
+<2013-12-02 11:17:32> <main><INFO> tellmeserver start succ ip:localhost|port:9407
+<2013-12-02 11:17:40> <nioEventLoopGroup-3-1><INFO> client connect--TellMeMsgHandler#0
+<2013-12-02 11:17:40> <nioEventLoopGroup-3-1><INFO> msg len--8
+<2013-12-02 11:17:40> <nioEventLoopGroup-3-1><INFO> msg data--12345678
+<2013-12-02 11:17:40> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@14800aa1
+<2013-12-02 11:17:45> <nioEventLoopGroup-3-1><INFO> msg len--13
+<2013-12-02 11:17:45> <nioEventLoopGroup-3-1><INFO> msg data--1385954265338
+<2013-12-02 11:17:45> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@443acc67
+<2013-12-02 11:17:50> <nioEventLoopGroup-3-1><INFO> msg len--13
+<2013-12-02 11:17:50> <nioEventLoopGroup-3-1><INFO> msg data--1385954270340
+<2013-12-02 11:17:50> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@7041a12f
+<2013-12-02 11:17:55> <nioEventLoopGroup-3-1><INFO> msg len--13
+<2013-12-02 11:17:55> <nioEventLoopGroup-3-1><INFO> msg data--1385954275340
+<2013-12-02 11:17:55> <nioEventLoopGroup-3-1><INFO> TellMeMsg --com.server.tellme.server.TellMeMsg@64bd4e3c
+<2013-12-02 11:18:20> <nioEventLoopGroup-3-1><INFO> read timeout
+<2013-12-02 11:18:25> <nioEventLoopGroup-3-1><INFO> client close--TellMeMsgHandler#0

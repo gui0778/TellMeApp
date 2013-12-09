@@ -1,21 +1,27 @@
 package com.server.tellme.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import org.springframework.data.mongodb.core.mapping.DBRef;
 
 public class User implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1996729894538778495L;
+	private static int maxCollection=1000;
+	public static String CollectionName="user";
 	public String id;
 	public String name;
 	public String passwd;
 	public String email;
-	public long registertime;	
+	public long registertime=new Date().getTime();
+	@DBRef
 	public UserLocation userloction;
 	public Map<String,Object> setinfo=new HashMap<String,Object>();;
 	public List<UserService> userservice=new LinkedList<UserService>();//open which service
@@ -23,6 +29,42 @@ public class User implements Serializable {
 	public Map<String,Object> linehandler=new HashMap<String,Object>();
 	public Map<String,Object> friendset=new HashMap<String,Object>();//other one use 
 	public String def_prefix="";
+	public static int getMaxCollection() {
+		return maxCollection;
+	}
+	public static void setMaxCollection(int maxCollection) {
+		User.maxCollection = maxCollection;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public List<BindAccount> getUserbind() {
+		return userbind;
+	}
+	public void setUserbind(List<BindAccount> userbind) {
+		this.userbind = userbind;
+	}
+	public Map<String, Object> getLinehandler() {
+		return linehandler;
+	}
+	public void setLinehandler(Map<String, Object> linehandler) {
+		this.linehandler = linehandler;
+	}
+	public Map<String, Object> getFriendset() {
+		return friendset;
+	}
+	public void setFriendset(Map<String, Object> friendset) {
+		this.friendset = friendset;
+	}
+	public String getDef_prefix() {
+		return getUserPrefix(name);
+	}
+	public void setDef_prefix(String def_prefix) {
+		this.def_prefix = def_prefix;
+	}
 	public String getName() {
 		return name;
 	}
@@ -67,6 +109,12 @@ public class User implements Serializable {
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	public static String getUserPrefix(String name)
+	{
+		int hash = Math.abs(name.hashCode()) % maxCollection;
+		return String.valueOf(hash);
+		
 	}
 
 

@@ -13,16 +13,16 @@ public class TellMeMessageData implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -7533616181382634730L;
-	public User user;
+	public User organziner;//msg creator
 	public List<MsgContent> msgcontent;
 	public List<MsgGoal> msggoal;
 	public long showtime;
 	public int regutype=0x0001;//定期类型
 	public User getUser() {
-		return user;
+		return organziner;
 	}
-	public void setUser(User user) {
-		this.user = user;
+	public void setUser(User organziner) {
+		this.organziner = organziner;
 	}
 	public List<MsgContent> getMsgcontent() {
 		return msgcontent;

@@ -1,4 +1,4 @@
-package com.server.tellme.entity;
+package com.tellme.common.entity;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -24,7 +24,7 @@ public class User implements Serializable {
 	@DBRef
 	public UserLocation userloction;
 	public Map<String,Object> setinfo=new HashMap<String,Object>();;
-	public List<UserService> userservice=new LinkedList<UserService>();//open which service
+	public List<AppService> userservice=new LinkedList<AppService>();//open which service
 	public List<BindAccount> userbind=new LinkedList<BindAccount>();
 	public Map<String,Object> linehandler=new HashMap<String,Object>();
 	public Map<String,Object> friendset=new HashMap<String,Object>();//other one use 
@@ -101,10 +101,10 @@ public class User implements Serializable {
 	public void setSetinfo(Map<String, Object> setinfo) {
 		this.setinfo = setinfo;
 	}
-	public List<UserService> getUserservice() {
+	public List<AppService> getUserservice() {
 		return userservice;
 	}
-	public void setUserservice(List<UserService> userservice) {
+	public void setUserservice(List<AppService> userservice) {
 		this.userservice = userservice;
 	}
 	public static long getSerialversionuid() {

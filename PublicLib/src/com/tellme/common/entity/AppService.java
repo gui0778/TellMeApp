@@ -1,8 +1,8 @@
-package com.server.tellme.entity;
+package com.tellme.common.entity;
 
 import java.io.Serializable;
 
-public class UserService implements Serializable {
+public class AppService implements Serializable {
 
 	/**
 	 * 

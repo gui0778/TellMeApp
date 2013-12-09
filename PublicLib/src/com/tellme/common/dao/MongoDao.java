@@ -4,7 +4,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.query.Query;
-
+import org.springframework.stereotype.Repository;
+@Repository
 public interface MongoDao {
 	public <T> T save(T entity,String collectionNmae);
 	public <T> T delete(T entity,String collectionNmae);

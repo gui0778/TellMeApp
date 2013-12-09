@@ -1,18 +1,38 @@
 package com.tellme.common.daoimpl;
 
+import javax.annotation.Resource;
+import javax.annotation.Resources;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Reference;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 
 import com.tellme.common.dao.MongoDao;
 
 public class MongoDaoImpl implements MongoDao {
 
+	@Autowired
+	public MongoTemplate usermongoTemplate;
+	
+	public MongoTemplate getUsermongoTemplate() {
+		return usermongoTemplate;
+	}
+
+	public void setUsermongoTemplate(MongoTemplate usermongoTemplate) {
+		this.usermongoTemplate = usermongoTemplate;
+	}
+
 	@Override
 	public <T> T save(T entity, String collectionNmae) {
 		// TODO Auto-generated method stub
-		return null;
+		this.usermongoTemplate.save(entity, collectionNmae);
+		return entity;
 	}
 
 	@Override

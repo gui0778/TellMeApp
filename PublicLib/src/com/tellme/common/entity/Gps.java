@@ -1,4 +1,4 @@
-package com.tellme.publiclib.entity;
+package com.tellme.common.entity;
 
 import java.io.Serializable;
 

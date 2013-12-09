@@ -1,4 +1,4 @@
-package com.server.tellme.entity;
+package com.tellme.common.entity;
 
 import java.io.Serializable;
 import java.util.HashMap;

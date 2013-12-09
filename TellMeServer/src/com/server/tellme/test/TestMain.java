@@ -4,9 +4,9 @@ import java.io.UnsupportedEncodingException;
 
 import org.json.JSONObject;
 
-import com.server.tellme.entity.User;
 import com.tcyclient.tellme.util.StringUtil;
 import com.tcyclient.tellme.util.SystemUtil;
+import com.tellme.common.entity.User;
 
 public class TestMain {
 

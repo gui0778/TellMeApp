@@ -3,9 +3,10 @@ package com.server.tellme.server;
 import java.io.Serializable;
 import java.util.List;
 
-import com.server.tellme.entity.MsgContent;
-import com.server.tellme.entity.MsgGoal;
-import com.server.tellme.entity.User;
+import com.tellme.common.entity.MsgContent;
+import com.tellme.common.entity.MsgGoal;
+import com.tellme.common.entity.User;
+
 
 public class TellMeMessageData implements Serializable {
 

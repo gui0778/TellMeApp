@@ -21,6 +21,9 @@ public class TellMeMsg implements Serializable{
 	public String checksum="";//32
 	public final static int CMD_LOGIN=0x100003;
 	public final static int CMD_OFFLINE=0x100004;
+	public final static int RESCMD_REPEAT_LOGIN=0x000004;
+	public final static int RESCMD_LOGIN_NORMAL=0x000004;
+	public final static long DEFAULT_TAIL_LEN=79;
 	public int getRescmd() {
 		return rescmd;
 	}
@@ -86,5 +89,12 @@ public class TellMeMsg implements Serializable{
 		JSONObject json=new JSONObject(data);
 		String string=json.toString();
 		return com.tellme.common.util.StringUtil.StringtoByte(string);
+	}
+	public  long  getTellMeMsgLen()
+	{
+		byte[] data=decodeData(this.tellmedata);
+		long l=data.length;
+		return l+DEFAULT_TAIL_LEN;
+		
 	}
 }

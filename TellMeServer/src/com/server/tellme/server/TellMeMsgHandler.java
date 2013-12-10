@@ -123,10 +123,13 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 		{
 			logger.info("user had login"+user.getName());
 
-			oldchx.writeAndFlush("d");
+			TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_OFFLINE, TellMeMsg.RESCMD_REPEAT_LOGIN);
+			oldchx.writeAndFlush(tellmemsg);
 		}
 		ChannelHandlerContext newchx=(ChannelHandlerContext)olduser.getLinehandler().get("chl");
-		newchx.writeAndFlush("d");
+		TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_OFFLINE, TellMeMsg.RESCMD_LOGIN_NORMAL);
+		newchx.writeAndFlush(tellmemsg);
+		
 
 	}
 

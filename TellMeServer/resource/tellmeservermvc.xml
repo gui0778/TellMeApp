@@ -31,5 +31,6 @@
 	    <property name="port" value="${tellmeserver.port}"/>
 	    <property name="timeout" value="${tellmeserver.timeout}"/>	    
 	</bean>
+	<bean id="springappcontext" class="com.tcyclient.tellme.util.SpringContext" scope="singleton"></bean>
 	<import resource="mongodb.xml"/>
 </beans>

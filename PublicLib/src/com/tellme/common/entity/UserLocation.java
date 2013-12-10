@@ -8,6 +8,14 @@ public class UserLocation implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1996729894538778495L;
+	public static String COLLECTION_NAME="userlocation";
+	public String id;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public enum LocationType{Gps,Cell,NetWork};
 	public Gps gps;
 	public long sendtime;

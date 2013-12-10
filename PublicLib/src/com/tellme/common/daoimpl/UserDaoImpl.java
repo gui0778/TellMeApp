@@ -49,5 +49,12 @@ public class UserDaoImpl extends MongoDaoImpl implements UserDao {
 		return find;
 	}
 
+	@Override
+	public Page<User> findAllUser(String collectionName) {
+		// TODO Auto-generated method stub
+		Page<User> find = (Page<User>)this.usermongoTemplate.findAll(User.class, collectionName);
+		return find;
+	}
+
 
 }

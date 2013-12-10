@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.tellme.common.entity.TellMeMsg;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
@@ -37,9 +39,9 @@ public class TellMeDecoderHandler extends MessageToMessageDecoder<ByteBuf> {
 //			str+=b;
 //		}
 		//logger.info(str.toString());
-		TellMeMsg msg=new TellMeMsg();
-		msg.setMsglen(len);
-		arg2.add(msg);
+		//TellMeMsg msg=new TellMeMsg();
+		//msg.setMsglen(len);
+		//arg2.add(msg);
 		
 	}
 

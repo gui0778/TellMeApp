@@ -13,9 +13,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
-@Service("appContext")
-@Scope("singleton")
-public class SystemUtil implements ApplicationContextAware {
+
+public class SpringContext implements ApplicationContextAware {
 
 	private static ApplicationContext context;
 	public void setApplicationContext(ApplicationContext applicationContext)

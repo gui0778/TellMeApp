@@ -1,12 +1,24 @@
 package com.server.tellme.server;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.tellme.common.entity.TellMeMessageData;
+import com.tellme.common.entity.TellMeMsg;
+import com.tellme.common.entity.User;
+import com.tellme.common.service.UserService;
+import com.tellme.common.util.SpringContext;
+import com.tellme.common.util.StringUtil;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 	private static final Logger logger = Logger.getLogger(TellMeMsgHandler.class);
+	@Autowired
+	public SpringContext springappcontext;
+	UserService userService=(UserService)springappcontext.getBean("userService");
+	public User user;
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
@@ -19,7 +31,12 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
 		super.channelInactive(ctx);
-		logger.info("client close--"+ctx.name());
+		logger.info("client close--");
+		if(user!=null)
+		{
+		 logger.error("client close--"+user.getName());
+		 
+		}
 	}
 
 	@Override
@@ -69,10 +86,48 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 	}
 
 	@Override
-	protected void channelRead0(ChannelHandlerContext arg0, TellMeMsg arg1)
+	protected void channelRead0(ChannelHandlerContext chx, TellMeMsg msg)
 			throws Exception {
 		// TODO Auto-generated method stub
-		logger.info("TellMeMsg --"+arg1);		
+		if(msg==null)
+		{
+			logger.info("msg is null");
+			return;
+		}
+		logger.info("TellMeMsg --"+msg.toString());
+		int cmd=msg.getCmd();
+		switch(cmd)
+		{
+			case TellMeMsg.CMD_LOGIN:
+				userLogin(chx,msg);
+				break;
+			default:
+				logger.info("no case"+msg.toString());
+				break;
+		
+		}
+	}
+	private void userLogin(ChannelHandlerContext chx, TellMeMsg msg)
+	{
+		logger.info("user login"+msg.toString());
+		User user=msg.getTellmedata().getOrganziner();
+		if(user==null)
+		{
+			return;			
+		}
+		user.getLinehandler().put("chl", chx);
+		userService.setUserOnline(user);
+		User olduser=userService.getUserOnline(user);
+		ChannelHandlerContext oldchx=(ChannelHandlerContext)olduser.getLinehandler().get("oldchl");
+		if(oldchx!=null)
+		{
+			logger.info("user had login"+user.getName());
+
+			oldchx.writeAndFlush("d");
+		}
+		ChannelHandlerContext newchx=(ChannelHandlerContext)olduser.getLinehandler().get("chl");
+		newchx.writeAndFlush("d");
+
 	}
 
 }

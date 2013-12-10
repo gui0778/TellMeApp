@@ -116,6 +116,13 @@ public class User implements Serializable {
 		return String.valueOf(hash);
 		
 	}
+	public User(String name)
+	{
+		this.name=name;
+	}
+	public User()
+	{
+	}
 
 
 }

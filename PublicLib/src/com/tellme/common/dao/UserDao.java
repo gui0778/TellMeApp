@@ -9,5 +9,6 @@ import com.tellme.common.entity.User;
 public interface UserDao extends MongoDao {
 	public User findByUsername(String username,String collectioName);
 	public Page<User> findUserQuery(PageRequest pagerequest,Query query,String collectioName);
+	public Page<User> findAllUser(String collectionName);
 
 }

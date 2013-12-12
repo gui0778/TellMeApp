@@ -13,23 +13,26 @@
 
     <!-- Default bean name is 'mongo' -->
     <mongo:mongo host="${mongo.msg.host}" port="${mongo.msg.port}" id="usermsgdb">
-            <mongo:options connections-per-host="8"
-                   threads-allowed-to-block-for-connection-multiplier="4"
-                   connect-timeout="1000"
-                   max-wait-time="1500"
-                   auto-connect-retry="true"
-                   socket-keep-alive="true"
-                   socket-timeout="1500"
-                   slave-ok="true"
-                   write-number="1"
-                   write-timeout="0"
-                   write-fsync="true"/>
-        </mongo:mongo>
+    </mongo:mongo>
     <mongo:db-factory dbname="${mongo.msg.db}" mongo-ref="usermsgdb" id="usermsgfactory" 
         username="${mongo.msg.user}" password="${mongo.msg.passwd}"/>
 
-	<bean id="usermsgMongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+	<bean id="usermongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
   		<constructor-arg name="mongoDbFactory" ref="usermsgfactory"/>
 </bean>
+	<bean id="mongoDao" class="com.tellme.common.daoimpl.MongoDaoImpl">
+		<property name="usermongoTemplate" ref="usermongoTemplate"></property>
+	</bean>
+	<bean id="mongoService" class="com.tellme.common.serviceImpl.MongoServieImpl">
+		<property name="mongoDao" ref="mongoDao"></property>
+	</bean>
+	<bean id="userDao" class="com.tellme.common.daoimpl.UserDaoImpl">
+	
+	</bean>	
+
+	<bean id="userService" class="com.tellme.common.serviceImpl.UserServiceImpl">
+	<property name="userDao" ref="userDao"></property>	
+	<property name="mongoDao" ref="mongoDao"></property>    
+	</bean>
 
 </beans>

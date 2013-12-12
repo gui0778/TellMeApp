@@ -5,11 +5,11 @@ import java.util.Date;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.server.tellme.entity.Gps;
-import com.server.tellme.entity.User;
-import com.server.tellme.entity.UserLocation;
-import com.tcyclient.tellme.mongo.MongoDao;
 import com.tcyclient.tellme.util.SystemUtil;
+import com.tellme.common.dao.MongoDao;
+import com.tellme.common.entity.Gps;
+import com.tellme.common.entity.User;
+import com.tellme.common.entity.UserLocation;
 
 public class Main {
 

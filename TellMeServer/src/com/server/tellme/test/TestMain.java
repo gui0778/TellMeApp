@@ -1,5 +1,8 @@
 package com.server.tellme.test;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+
 import java.io.UnsupportedEncodingException;
 
 import org.json.JSONObject;
@@ -45,6 +48,11 @@ public class TestMain {
 		}
 		System.out.println();
 		System.out.println(StringUtil.bytetoString(encd));
+		long l=1;
+		ByteBuf buf=Unpooled.buffer();
+		buf.writeLong(l);
+		System.out.println(buf.readableBytes());
+		System.out.println(buf.readLong());
 		
 
 

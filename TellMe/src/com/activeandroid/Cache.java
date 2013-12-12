@@ -19,6 +19,7 @@ package com.activeandroid;
 import java.util.Collection;
 
 import android.content.Context;
+
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.util.LruCache;
 

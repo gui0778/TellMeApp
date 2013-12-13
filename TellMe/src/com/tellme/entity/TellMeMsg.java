@@ -1,9 +1,13 @@
-package com.tellme.common.entity;
+package com.tellme.entity;
 
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.json.JSONObject;
+
+import com.tellme.app.util.StringUtil;
 
 public class TellMeMsg implements Serializable{
 	/**
@@ -114,9 +118,9 @@ public class TellMeMsg implements Serializable{
 	}
 	public static byte[] decodeData(TellMeMessageData data)
 	{
-		JSONObject json=new JSONObject(data);
+		com.tellme.json.JSONObject json=new com.tellme.json.JSONObject(data);
 		String string=json.toString();
-		return com.tellme.common.util.StringUtil.StringtoByte(string);
+		return StringUtil.StringtoByte(string);
 	}
 	public  long  getTellMeMsgLen()
 	{
@@ -127,8 +131,8 @@ public class TellMeMsg implements Serializable{
 	}
 	public  byte[] getTellMeData()
 	{
-		JSONObject json=new JSONObject(tellmedata);
+		com.tellme.json.JSONObject json=new com.tellme.json.JSONObject(tellmedata);
 		String string=json.toString();
-		return com.tellme.common.util.StringUtil.StringtoByte(string);
+		return StringUtil.StringtoByte(string);
 	}
 }

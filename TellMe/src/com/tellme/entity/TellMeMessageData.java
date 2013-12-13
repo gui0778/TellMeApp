@@ -1,11 +1,8 @@
-package com.tellme.common.entity;
+package com.tellme.entity;
 
 import java.io.Serializable;
 import java.util.List;
 
-import com.tellme.common.entity.MsgContent;
-import com.tellme.common.entity.MsgGoal;
-import com.tellme.common.entity.User;
 
 
 public class TellMeMessageData implements Serializable {

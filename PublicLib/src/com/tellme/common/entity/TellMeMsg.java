@@ -21,6 +21,9 @@ public class TellMeMsg implements Serializable{
 	public int packettotal=1;//4
 	public int packetindex=1;//4
 	public long serial=0;//8
+	public long nextserial=0;//8
+	public TellMeMessageData tellmedata;
+	public String checksum="78979";//32
 	public int getPackettotal() {
 		return packettotal;
 	}
@@ -45,15 +48,12 @@ public class TellMeMsg implements Serializable{
 	public void setNextserial(long nextserial) {
 		this.nextserial = nextserial;
 	}
-	public long nextserial=0;//8
-	public TellMeMessageData tellmedata;
-	public String checksum="78979";//32
 	public final static int CMD_LOGIN=0x100003;
 	public final static int CMD_HEART=0x100000;
 	public final static int CMD_OFFLINE=0x100004;
 	public final static int RESCMD_REPEAT_LOGIN=0x000004;
 	public final static int RESCMD_LOGIN_NORMAL=0x000004;
-	public final static int DEFAULT_HEAD_LEN=28;
+	public final static int DEFAULT_HEAD_LEN=52;
 	public final static int DEFAULT_TAIL_LEN=32;
 	public int getRescmd() {
 		return rescmd;

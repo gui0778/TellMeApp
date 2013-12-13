@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 import org.json.JSONObject;
 
+import com.tellme.common.util.StringUtil;
+
 public class TellMeMsg implements Serializable{
 	/**
 	 * 
@@ -45,8 +47,9 @@ public class TellMeMsg implements Serializable{
 	}
 	public long nextserial=0;//8
 	public TellMeMessageData tellmedata;
-	public String checksum="";//32
+	public String checksum="78979";//32
 	public final static int CMD_LOGIN=0x100003;
+	public final static int CMD_HEART=0x100000;
 	public final static int CMD_OFFLINE=0x100004;
 	public final static int RESCMD_REPEAT_LOGIN=0x000004;
 	public final static int RESCMD_LOGIN_NORMAL=0x000004;
@@ -106,6 +109,10 @@ public class TellMeMsg implements Serializable{
 		this.cmd=cmd;
 		
 	}
+	public TellMeMsg()
+	{
+		
+	}
 	public TellMeMsg(int cmd,int rescmd)
 	{
 		this.cmd=cmd;
@@ -127,8 +134,23 @@ public class TellMeMsg implements Serializable{
 	}
 	public  byte[] getTellMeData()
 	{
+		if(tellmedata==null)
+			return null;
 		JSONObject json=new JSONObject(tellmedata);
 		String string=json.toString();
 		return com.tellme.common.util.StringUtil.StringtoByte(string);
+	}
+	public  static byte[] getTellMeData(TellMeMessageData data)
+	{
+		JSONObject json=new JSONObject(data);
+		String string=json.toString();
+		return com.tellme.common.util.StringUtil.StringtoByte(string);
+	}
+	public  static TellMeMessageData getTellMeData(byte[] data)
+	{
+		String string=StringUtil.bytetoString(data);
+		net.sf.json.JSONObject jsonObject=net.sf.json.JSONObject.fromObject(string);
+		TellMeMessageData beandata=(TellMeMessageData)net.sf.json.JSONObject.toBean(jsonObject, TellMeMessageData.class);
+		return beandata;
 	}
 }

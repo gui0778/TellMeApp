@@ -18,8 +18,9 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//TellMeClient tclient=new TellMeClient();
-		//tclient.start();
+		TellMeClient tclient=new TellMeClient();
+		tclient.start();
+		/*
 		ApplicationContext context;
 		context = new ClassPathXmlApplicationContext(new String[] {"tellmeservermvc.xml"});
 		MongoDao mongdao=(MongoDao)context.getBean("mongDaoImpl");
@@ -32,6 +33,7 @@ public class Main {
 		loc.setGps(gps);
 		user.setUserloction(loc);
 		mongdao.save(user, User.CollectionName);
+		*/
 
 	}
 

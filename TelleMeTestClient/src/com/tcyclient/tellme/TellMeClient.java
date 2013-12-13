@@ -2,6 +2,9 @@ package com.tcyclient.tellme;
 
 import org.apache.log4j.Logger;
 
+import com.tellme.common.entity.TellMeMsg;
+
+
 import io.netty.bootstrap.Bootstrap;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
@@ -66,6 +69,12 @@ public class TellMeClient {
             b.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {
+                	ChannelPipeline pipeline = ch.pipeline();
+    				pipeline.addLast("decoder", new TellMeDecoderHandler());
+    				pipeline.addLast("encoder", new TellMeEncodderHander());
+    			    pipeline.addLast("idleStateHandler",
+    						new IdleStateHandler(getTimeout(), 0, 0));
+    			    pipeline.addLast("tiemoutHandler",new TellMeTimeOutHandler());
                     ch.pipeline().addLast(new TellMeMsgHandler());
                 }
             });
@@ -93,13 +102,10 @@ public class TellMeClient {
 
 					try {
 						Thread.sleep(5000);
-						if(num<3)
+						if(num<10)
 						{
-							ByteBuf buf=Unpooled.buffer();
-							long time=System.currentTimeMillis();
-							String tstr=String.valueOf(time);
-							buf.writeBytes(tstr.getBytes());
-							ctx.writeAndFlush(buf).sync();
+							TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_HEART, TellMeMsg.RESCMD_LOGIN_NORMAL);
+							ctx.writeAndFlush(tellmemsg).sync();
 						}
 						num++;
 						

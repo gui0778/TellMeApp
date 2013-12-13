@@ -64,16 +64,18 @@ public class TellMeServer {
 				//pipeline.addLast("frame",new LengthFieldBasedFrameDecoder(MAXLEN, 0, 2));
 				//pipeline.addLast("frameEncoder", new LengthFieldPrepender(4));
 				pipeline.addLast("decoder", new TellMeDecoderHandler());
-				pipeline.addLast("encoder", new StringEncoder(CharsetUtil.UTF_8));
+				pipeline.addLast("encoder", new TellMeEncodderHander());
 			    pipeline.addLast("idleStateHandler",
 						new IdleStateHandler(getTimeout(), 0, 0));
 			    pipeline.addLast("tiemoutHandler",new TellMeTimeOutHandler());
 				pipeline.addLast(eventgroup,"clienthandler",new TellMeMsgHandler());
+				logger.info("client connet");
 			}
 		});
 
 		try {
 			serverbootstrap.bind(host, port).sync().channel();
+			logger.info("start server with port--"+port);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

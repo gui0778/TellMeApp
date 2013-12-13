@@ -2,6 +2,8 @@ package com.server.tellme.server;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.tellme.common.entity.TellMeMessageData;
 import com.tellme.common.entity.TellMeMsg;
@@ -15,9 +17,8 @@ import io.netty.channel.SimpleChannelInboundHandler;
 
 public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 	private static final Logger logger = Logger.getLogger(TellMeMsgHandler.class);
-	@Autowired
-	public SpringContext springappcontext;
-	UserService userService=(UserService)springappcontext.getBean("userService");
+	public ApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"tellmeservermvc.xml"});
+	UserService userService=(UserService)context.getBean("userService");
 	public User user;
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
@@ -25,6 +26,22 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 		super.channelActive(ctx);
 		logger.info("client connect--"+ctx.name());
 		
+	}
+
+	public UserService getUserService() {
+		return userService;
+	}
+
+	public void setUserService(UserService userService) {
+		this.userService = userService;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
@@ -101,6 +118,9 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 			case TellMeMsg.CMD_LOGIN:
 				userLogin(chx,msg);
 				break;
+			case TellMeMsg.CMD_HEART:
+				onHeart(chx,msg);
+				break;
 			default:
 				logger.info("no case"+msg.toString());
 				break;
@@ -132,5 +152,13 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 		
 
 	}
+	private void onHeart(ChannelHandlerContext chx, TellMeMsg msg)
+	{
+		logger.info("user login"+msg.toString());
+		TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_HEART);
+		chx.channel().writeAndFlush(tellmemsg);
+		
+	}
+
 
 }

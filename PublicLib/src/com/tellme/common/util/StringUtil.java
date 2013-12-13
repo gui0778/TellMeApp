@@ -6,7 +6,6 @@ import java.nio.CharBuffer;
 import java.nio.charset.Charset;
 
 public class StringUtil {
-	public final static String DEFAULT_CHARSET="UTF-8";
 	public static String hexToString(byte[] ids) {
 		StringBuffer id = new StringBuffer();
 		for (int i = 0; i < ids.length; i++) {
@@ -52,7 +51,7 @@ public class StringUtil {
 
 	public static byte[] StringtoByte(String data) {
 		try {
-			return data.getBytes(DEFAULT_CHARSET);
+			return data.getBytes(AppConfig.DEFAULT_CHARSET);
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -91,7 +90,7 @@ public class StringUtil {
 	 public static String bytetoString(byte[] b)
 	 {
 		 try {
-			return new String(b,DEFAULT_CHARSET);
+			return new String(b,AppConfig.DEFAULT_CHARSET);
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -100,7 +99,7 @@ public class StringUtil {
 	 }
 	 public static char[] bytetoChar(byte[] bytes)
 	 {
-		   Charset cs = Charset.forName (DEFAULT_CHARSET);
+		   Charset cs = Charset.forName (AppConfig.DEFAULT_CHARSET);
 		      ByteBuffer bb = ByteBuffer.allocate (bytes.length);
 		      bb.put (bytes);
 		                 bb.flip ();

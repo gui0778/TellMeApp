@@ -2,6 +2,8 @@ package com.tcyclient.tellme;
 
 import org.apache.log4j.Logger;
 
+import com.tellme.common.entity.TellMeMsg;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.buffer.UnpooledByteBufAllocator;
@@ -14,13 +16,6 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
 		super.channelActive(ctx);
-		logger.info("connect --"+ctx.name());
-		TellMeMsg msg=new TellMeMsg();
-		msg.setCmd(0012);
-		ByteBuf buf=Unpooled.buffer();
-		buf.writeBytes("12345678".getBytes());
-		ctx.channel().writeAndFlush(buf).sync();;
-		
 	}
 
 	@Override

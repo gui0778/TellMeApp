@@ -1,8 +1,17 @@
 package com.tcyclient.tellme;
 
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.SocketAddress;
+import java.util.Set;
+import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 
+import com.tellme.common.entity.TellMeMessageData;
 import com.tellme.common.entity.TellMeMsg;
+import com.tellme.common.entity.User;
 
 
 import io.netty.bootstrap.Bootstrap;
@@ -26,14 +35,24 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 import io.netty.util.CharsetUtil;
+import io.netty.util.Timeout;
+import io.netty.util.Timer;
 
 public class TellMeClient {
 	public String host="localhost";
+	public static int RECONNECT_DELAY=10;
 	public int port=9407;
 	private int num=0;
 	public int timeout;
 	public static int MAXLEN=0xffff;
 	public Channel ctx;
+	public int heartdely=30;
+	public int getHeartdely() {
+		return heartdely;
+	}
+	public void setHeartdely(int heartdely) {
+		this.heartdely = heartdely;
+	}
 	public String getHost() {
 		return host;
 	}
@@ -75,7 +94,7 @@ public class TellMeClient {
     			    pipeline.addLast("idleStateHandler",
     						new IdleStateHandler(getTimeout(), 0, 0));
     			    pipeline.addLast("tiemoutHandler",new TellMeTimeOutHandler());
-                    ch.pipeline().addLast(new TellMeMsgHandler());
+                    ch.pipeline().addLast(new TellMeMsgHandler(TellMeClient.this));
                 }
             });
             
@@ -92,7 +111,8 @@ public class TellMeClient {
         finally {
            // workerGroup.shutdownGracefully();
         }
-		logger.info("tellmeserver start succ ip:"+host+"|port:"+port);
+		logger.info("connect succ ip:"+host+"|port:"+port);
+		/*
 		new Thread(new Runnable(){
 
 			public void run() {
@@ -101,11 +121,18 @@ public class TellMeClient {
 				{
 
 					try {
-						Thread.sleep(5000);
+						Thread.sleep(1000*30);
 						if(num<10)
 						{
 							TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_HEART, TellMeMsg.RESCMD_LOGIN_NORMAL);
+							TellMeMessageData msg=new TellMeMessageData();
+							msg.setOrganziner(new User("name"));
+							tellmemsg.setTellmedata(msg);
 							ctx.writeAndFlush(tellmemsg).sync();
+						}
+						else{
+							ctx.close();
+							return;
 						}
 						num++;
 						
@@ -119,6 +146,7 @@ public class TellMeClient {
 			}
 			
 		}).start();
+		*/
 	}
 	public Channel getCtx() {
 		return ctx;
@@ -142,6 +170,11 @@ public class TellMeClient {
 		bossGroup.shutdownGracefully();
 		workerGroup.shutdownGracefully();
 		
+	}
+	public void connect()
+	{
+		SocketAddress remoteAddress=new InetSocketAddress(host, port);
+		getCtx().connect(remoteAddress);
 	}
 
 }

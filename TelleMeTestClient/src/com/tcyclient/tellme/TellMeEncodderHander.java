@@ -22,12 +22,7 @@ public class TellMeEncodderHander extends MessageToMessageEncoder<TellMeMsg> {
 		// TODO Auto-generated method stub
 		TellMeMsg bufmsg = (TellMeMsg)msg;
 		byte[] msgdata=bufmsg.getTellMeData();
-		int datalen=0;
-		if(msgdata==null||msgdata.length<1)
-		{
-			msgdata=new byte[]{0x0f};
-		}
-		datalen=msgdata.length;
+		int datalen=msgdata.length;
 		int len =  datalen+ TellMeMsg.DEFAULT_HEAD_LEN + TellMeMsg.DEFAULT_TAIL_LEN;
 		ByteBuf buf=Unpooled.buffer();
 		buf.writeInt(len);
@@ -41,8 +36,8 @@ public class TellMeEncodderHander extends MessageToMessageEncoder<TellMeMsg> {
 		buf.writeLong(bufmsg.getSerial());
 		buf.writeLong(bufmsg.getNextserial());
 		buf.writeBytes(msgdata);
-		byte[] checksum=CoderTools.getencoderChecksum(buf);
-		buf.writeBytes(checksum);
+		//byte[] checksum=CoderTools.getencoderChecksum(buf);
+		buf.writeZero(32);
 		out.add(buf);
 		if(logger.isDebugEnabled())
 		{

@@ -34,8 +34,7 @@ public class TellMeEncodderHander extends MessageToMessageEncoder<TellMeMsg> {
 		buf.writeLong(bufmsg.getSerial());
 		buf.writeLong(bufmsg.getNextserial());
 		buf.writeBytes(bufmsg.getTellMeData());
-		byte[] checksum=CoderTools.getencoderChecksum(buf);
-		buf.writeBytes(checksum);
+		buf.writeZero(32);
 		out.add(buf);
 		if(logger.isDebugEnabled())
 		{

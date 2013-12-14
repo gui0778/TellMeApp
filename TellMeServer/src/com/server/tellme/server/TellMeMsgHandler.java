@@ -88,6 +88,7 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 		//super.exceptionCaught(ctx, cause);
 		logger.error("client error,had close");
 		logger.info("client exception"+ctx.name());
+		ctx.close();
 	}
 
 	@Override
@@ -129,8 +130,15 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 	}
 	private void userLogin(ChannelHandlerContext chx, TellMeMsg msg)
 	{
+		if(msg==null)
+		{
+			TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_OFFLINE, TellMeMsg.RESCMD_LOGIN_NORMAL);
+			chx.writeAndFlush(tellmemsg);
+			return;
+		}
 		logger.info("user login"+msg.toString());
 		User user=msg.getTellmedata().getOrganziner();
+		this.user=user;
 		if(user==null)
 		{
 			return;			
@@ -148,6 +156,9 @@ public class TellMeMsgHandler extends SimpleChannelInboundHandler<TellMeMsg> {
 		}
 		ChannelHandlerContext newchx=(ChannelHandlerContext)olduser.getLinehandler().get("chl");
 		TellMeMsg tellmemsg=new TellMeMsg(TellMeMsg.CMD_OFFLINE, TellMeMsg.RESCMD_LOGIN_NORMAL);
+		TellMeMessageData msgdataData=new TellMeMessageData();
+		msgdataData.setOrganziner(this.user);
+		tellmemsg.setTellmedata(msgdataData);
 		newchx.writeAndFlush(tellmemsg);
 		
 

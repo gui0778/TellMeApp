@@ -34,17 +34,7 @@ public class TellMeDecoderHandler extends MessageToMessageDecoder<ByteBuf> {
 		{
 			logger.info("recevice from client msg==");
 		}
-		ByteBuf checksumbuf=Unpooled.buffer();
 		int len=buf.readableBytes();
-		buf.readBytes(checksumbuf, len-TellMeMsg.DEFAULT_TAIL_LEN, TellMeMsg.DEFAULT_TAIL_LEN);
-//		byte[] recivecechecksum=CoderTools.getDecoderChecksum(checksumbuf);
-//		byte[] testchecksum=CoderTools.CalculaterChecksum(buf);
-//		if(!recivecechecksum.equals(testchecksum))
-//		{
-//			logger.error("checksum errot--");
-//			return;
-//			
-//		}
 		int msglen=buf.readInt();
 		int channel=buf.readInt();
 		int cmd=buf.readInt();
@@ -56,18 +46,18 @@ public class TellMeDecoderHandler extends MessageToMessageDecoder<ByteBuf> {
 		long serial=buf.readLong();
 		long nextserial=buf.readLong();
 
-		ByteBuf msgbuf=Unpooled.buffer();
-		int hh=len-TellMeMsg.DEFAULT_TAIL_LEN-TellMeMsg.DEFAULT_HEAD_LEN;
-		buf.readBytes(msgbuf,TellMeMsg.DEFAULT_TAIL_LEN+TellMeMsg.DEFAULT_HEAD_LEN,hh);
-		int datalen=msgbuf.readableBytes();
-		byte[] msgdata =new byte[datalen];
-		msgbuf.readBytes(msgdata);
+
+		byte[] msgdata=new byte[len-TellMeMsg.DEFAULT_TAIL_LEN-TellMeMsg.DEFAULT_HEAD_LEN];
+		buf.readBytes(msgdata);
 		TellMeMessageData msgbean=null;
-		if(msgdata!=null&&msgdata.length>10)
+		if(msgdata!=null&&msgdata.length>5)
 			{
 			msgbean=TellMeMsg.getTellMeData(msgdata);
 			}
+		byte[] checksum=new byte[32];
+		buf.readBytes(checksum);
 		TellMeMsg outmsg=new TellMeMsg();
+		outmsg.setMsglen(msglen);
 		outmsg.setCmd(cmd);
 		outmsg.setChannel(channel);
 		outmsg.setRescmd(rescmd);
@@ -78,7 +68,7 @@ public class TellMeDecoderHandler extends MessageToMessageDecoder<ByteBuf> {
 		outmsg.setSerial(serial);
 		outmsg.setNextserial(nextserial);
 		outmsg.setTellmedata(msgbean);
-		//outmsg.setChecksum(StringUtil.bytetoString(recivecechecksum));
+		outmsg.setChecksum(StringUtil.bytetoString(checksum));
 		out.add(outmsg);
 	}
 

@@ -61,6 +61,7 @@ public class TellMeTimeOutHandler extends ChannelDuplexHandler{
             } else if (e.state() == IdleState.WRITER_IDLE) {
                 //ctx.writeAndFlush(new PingMessage());
             	logger.info("write timeout");
+            	ctx.close();
             }
         }
 	}

@@ -12,7 +12,10 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.DisplayMetrics;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 
@@ -20,13 +23,24 @@ public class ChatMain extends Activity{
 
 	private MapView mMapView;
 	private MapController mMapController;
+	private ImageButton openFriendlLstbtn;
+	private int wdwidth=0,wdheight=0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 	      setContentView(R.layout.chatmain);
 	      mMapView=(MapView)findViewById(R.id.chatmap);
+	      initapp();
 	      initMapView();
+		 initWestButtonView();
+	}
+	public void initapp()
+	{
+		DisplayMetrics dm=new DisplayMetrics();
+		getWindowManager().getDefaultDisplay().getMetrics(dm);
+		wdwidth=dm.widthPixels;
+		wdheight=dm.heightPixels;
 	}
 	public void initMapView()
 	{
@@ -38,6 +52,21 @@ public class ChatMain extends Activity{
 		//用给定的经纬度构造一个GeoPoint，单位是微度 (度 * 1E6)
 		mMapController.setCenter(point);//设置地图中心点
 		mMapController.setZoom(12);//设置地图zoom级别
+
+	}
+	public void initFooterView()
+	{
+		
+	}
+	public void initWestButtonView()
+	{
+		openFriendlLstbtn=new ImageButton(this);
+		Button button = new Button(this);  
+		 button.setText("Hello World"); 
+		openFriendlLstbtn.setBackgroundResource(R.drawable.btn_search_bg);
+		MapView.LayoutParams btnParams=new MapView.LayoutParams(MapView.LayoutParams.WRAP_CONTENT, MapView.LayoutParams.WRAP_CONTENT, 0, wdheight/2, MapView.LayoutParams.TOP);
+		mMapView.addView(openFriendlLstbtn,btnParams);
+		
 	}
 	public AppContext getApp()
 	{

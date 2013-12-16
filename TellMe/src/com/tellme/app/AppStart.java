@@ -3,6 +3,7 @@ package com.tellme.app;
 import com.tellme.app.R;
 import com.tellme.app.common.StringUtils;
 
+import com.tellme.app.ui.ChatMain;
 import com.tellme.app.ui.Main;
 import android.app.Activity;
 import android.content.Intent;
@@ -61,7 +62,7 @@ public class AppStart extends Activity {
      * 跳转到...
      */
     private void redirectTo(){        
-        Intent intent = new Intent(this, Main.class);
+        Intent intent = new Intent(this, ChatMain.class);
         startActivity(intent);
         finish();
     }

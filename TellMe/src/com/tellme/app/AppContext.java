@@ -14,6 +14,7 @@ import java.util.Hashtable;
 import java.util.Properties;
 import java.util.UUID;
 
+import com.baidu.mapapi.BMapManager;
 //import com.tellme.app.R;
 import com.tellme.app.api.ApiClient;
 import com.tellme.app.common.CyptoUtils;
@@ -65,13 +66,21 @@ import android.os.Message;
  * @created 2012-3-21
  */
 public class AppContext extends Application {
-	
+	public  BMapManager mBMapMan = null;  
+	public  BMapManager getmBMapMan() {
+		return mBMapMan;
+	}
+
+	public  void setmBMapMan(BMapManager mBMapMan) {
+		this.mBMapMan = mBMapMan;
+	}
 	public static final int NETTYPE_WIFI = 0x01;
 	public static final int NETTYPE_CMWAP = 0x02;
 	public static final int NETTYPE_CMNET = 0x03;
 	
 	public static final int PAGE_SIZE = 20;//默认分页大小
 	private static final int CACHE_TIME = 60*60000;//缓存失效时间
+	public final static String BAIDU_KEY="FRCMNGlnN46ogrSvkF7qPqjF";
 	
 	private boolean login = false;	//登录状态
 	private int loginUid = 0;	//登录用户的id
@@ -92,7 +101,9 @@ public class AppContext extends Application {
 	public void onCreate() {
 		super.onCreate();
         //注册App异常崩溃处理器
-        Thread.setDefaultUncaughtExceptionHandler(AppException.getAppExceptionHandler());
+        //Thread.setDefaultUncaughtExceptionHandler(AppException.getAppExceptionHandler());
+		mBMapMan=new BMapManager(this);
+		mBMapMan.init(this.BAIDU_KEY, null);  
         
         init();
 	}
@@ -1691,5 +1702,6 @@ public class AppContext extends Application {
 	public void setSaveImagePath(String saveImagePath) {
 		this.saveImagePath = saveImagePath;
 	}	
+	
 	
 }

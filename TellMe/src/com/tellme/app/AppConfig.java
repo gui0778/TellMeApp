@@ -46,6 +46,7 @@ public class AppConfig {
 	public final static String CONF_CHECKUP = "perf_checkup";
 
 	public final static String SAVE_IMAGE_PATH = "save_image_path";
+	public final static String[] defualtFriendList=new String[]{"小李","王哥","slimo"};
 	@SuppressLint("NewApi")
 	public final static String DEFAULT_SAVE_IMAGE_PATH = Environment.getExternalStorageDirectory()+ File.separator+ "OSChina"+ File.separator;
 			

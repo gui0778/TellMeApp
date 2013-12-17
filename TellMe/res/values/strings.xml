@@ -83,4 +83,7 @@
     
     <string name="setting_head_title">系统设置</string>
     <string name="text_default_test">default text</string>
+    <!-- my app private -->
+    <string name="all_friend_title">所有好友</string>
+    <string name="chat_friend_title">聊天好友</string>
 </resources>

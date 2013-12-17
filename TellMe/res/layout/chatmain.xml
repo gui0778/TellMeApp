@@ -29,10 +29,10 @@
         android:layout_width="233dip"
         android:layout_height="fill_parent"
         android:layout_gravity="left"
-        android:layout_weight="1"
         panel:closedHandle="@drawable/left_switcher_collapsed_background"
         panel:content="@+id/panelContent"
         panel:handle="@+id/panelHandle"
+        panel:animationDuration="1000"
         panel:openedHandle="@drawable/left_switcher_expanded_background"
         panel:position="left"
         >
@@ -55,17 +55,31 @@
             android:layout_height="fill_parent"
             android:background="#999932"
             android:padding="4dip"
-            android:text="@string/text_default_test"
-            android:textColor="#eee"
+            android:text="@string/all_friend_title"
+            android:textColor="@color/blue"
             android:textSize="@dimen/text_size_16"
             android:textStyle="bold" />
             <ListView 
-            android:id="@+id/friendliistview"
+            android:id="@+id/allfriendliistview"
             android:layout_width="200dip"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:background="#999932"         
-            >
-            </ListView>
+            />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#999932"
+            android:padding="4dip"
+            android:text="@string/chat_friend_title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+            <ListView 
+            android:id="@+id/chatfriendliistview"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:background="#999932"         
+            />
         </LinearLayout>
     </com.tellme.app.widget.SlideView>
  </FrameLayout>

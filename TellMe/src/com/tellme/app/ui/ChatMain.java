@@ -15,6 +15,7 @@ import android.support.v4.app.FragmentActivity;
 import android.util.DisplayMetrics;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
@@ -25,6 +26,7 @@ public class ChatMain extends Activity{
 	private MapController mMapController;
 	private ImageButton openFriendlLstbtn;
 	private int wdwidth=0,wdheight=0;
+	private ListView allfriendlistview;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -33,7 +35,12 @@ public class ChatMain extends Activity{
 	      mMapView=(MapView)findViewById(R.id.chatmap);
 	      initapp();
 	      initMapView();
-		 initWestButtonView();
+	      initBottomButtonView();
+	      
+	}
+	public void initHeadview()
+	{
+		allfriendlistview=(ListView)findViewById(R.id.allfriendliistview);
 	}
 	public void initapp()
 	{
@@ -58,13 +65,17 @@ public class ChatMain extends Activity{
 	{
 		
 	}
-	public void initWestButtonView()
+	public void initFriendList()
+	{
+		
+	}
+	public void initBottomButtonView()
 	{
 		openFriendlLstbtn=new ImageButton(this);
 		Button button = new Button(this);  
 		 button.setText("Hello World"); 
 		openFriendlLstbtn.setBackgroundResource(R.drawable.btn_search_bg);
-		MapView.LayoutParams btnParams=new MapView.LayoutParams(MapView.LayoutParams.WRAP_CONTENT, MapView.LayoutParams.WRAP_CONTENT, 0, wdheight/2, MapView.LayoutParams.TOP);
+		MapView.LayoutParams btnParams=new MapView.LayoutParams(MapView.LayoutParams.WRAP_CONTENT, MapView.LayoutParams.WRAP_CONTENT, wdwidth/2, wdheight, MapView.LayoutParams.BOTTOM);
 		mMapView.addView(openFriendlLstbtn,btnParams);
 		
 	}

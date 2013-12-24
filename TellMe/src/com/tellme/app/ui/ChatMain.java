@@ -1,10 +1,15 @@
 package com.tellme.app.ui;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.baidu.mapapi.map.MapController;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.platform.comapi.basestruct.GeoPoint;
 import com.tellme.app.AppContext;
 import com.tellme.app.R;
+import com.tellme.app.adapter.AllFriendListAdapter;
+import com.tellme.entity.User;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -27,6 +32,8 @@ public class ChatMain extends Activity{
 	private ImageButton openFriendlLstbtn;
 	private int wdwidth=0,wdheight=0;
 	private ListView allfriendlistview;
+	public  AllFriendListAdapter friendlistadpter;
+	public 		Map<String,User> usermap=new HashMap<String, User>();
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -36,11 +43,17 @@ public class ChatMain extends Activity{
 	      initapp();
 	      initMapView();
 	      initBottomButtonView();
+	      initHeadview();
 	      
 	}
 	public void initHeadview()
 	{
 		allfriendlistview=(ListView)findViewById(R.id.allfriendliistview);
+		User u=new User();
+		u.setName("tancyu");
+		usermap.put(u.getName(), u);
+		friendlistadpter=new AllFriendListAdapter(usermap,this);
+		allfriendlistview.setAdapter(friendlistadpter);
 	}
 	public void initapp()
 	{

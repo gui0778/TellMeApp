@@ -61,6 +61,7 @@ public class TestMain {
 		String str=StringUtil.bytetoString(encd);
 		System.out.println(str);
 		net.sf.json.JSONObject jsonObject=net.sf.json.JSONObject.fromObject(str);
+		System.out.println("json"+jsonObject.toString());
 		TellMeMessageData beandata=(TellMeMessageData)net.sf.json.JSONObject.toBean(jsonObject, TellMeMessageData.class);
 		System.out.println(beandata.getOrganziner().getName());
 		System.out.println(beandata.getMsgcontent().get(0));

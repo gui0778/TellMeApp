@@ -48,21 +48,22 @@
             android:layout_height="fill_parent"
             android:background="#999932"
             android:gravity="left"
-            android:orientation="horizontal"            
+            android:orientation="vertical"            
             >
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:background="#999932"
             android:padding="4dip"
             android:text="@string/all_friend_title"
             android:textColor="@color/blue"
             android:textSize="@dimen/text_size_16"
-            android:textStyle="bold" />
+            android:textStyle="bold" /> 
             <ListView 
             android:id="@+id/allfriendliistview"
             android:layout_width="200dip"
             android:layout_height="wrap_content"
+            android:layout_gravity="left"
             android:background="#999932"         
             />
          <TextView

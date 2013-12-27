@@ -97,7 +97,11 @@
     <version>2.1</version>  
     <classifier>jdk15</classifier>  
 </dependency> 
-
+<dependency>
+	<groupId>xom</groupId>
+	<artifactId>xom</artifactId>
+	<version>1.2.5</version>
+</dependency>
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>

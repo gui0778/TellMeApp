@@ -2,7 +2,7 @@ package com.tellme.weixin.entity;
 
 import java.io.Serializable;
 
-public class WexinPicMsg extends BaseWeixinMsg implements Serializable {
+public class WeixinPicMsg extends BaseWeixinMsg implements Serializable {
 
 	/**
 	 * 

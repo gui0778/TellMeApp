@@ -10,7 +10,7 @@ public class BaseWeixinMsg implements Serializable {
 	private static final long serialVersionUID = -1196994979801044190L;
 	public String ToUserName;
 	public String FromUserName;
-	public String CreateTime;
+	public long CreateTime;
 	public String MsgType;
 	public String MsgId;
 	public String getMsgId() {
@@ -19,10 +19,10 @@ public class BaseWeixinMsg implements Serializable {
 	public void setMsgId(String msgId) {
 		MsgId = msgId;
 	}
-	public String getTooUserName() {
+	public String getToUserName() {
 		return ToUserName;
 	}
-	public void setTooUserName(String toUserName) {
+	public void setToUserName(String toUserName) {
 		ToUserName = toUserName;
 	}
 	public String getFromUserName() {
@@ -31,10 +31,10 @@ public class BaseWeixinMsg implements Serializable {
 	public void setFromUserName(String fromUserName) {
 		FromUserName = fromUserName;
 	}
-	public String getCreateTime() {
+	public long getCreateTime() {
 		return CreateTime;
 	}
-	public void setCreateTime(String createTime) {
+	public void setCreateTime(long createTime) {
 		CreateTime = createTime;
 	}
 	public String getMsgType() {

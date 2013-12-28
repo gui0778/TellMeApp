@@ -87,17 +87,6 @@ public class WeiXinUtil {
 	        }  
 	        return sbDes.toString();  
 	    }
-	 public JSONArray getJSONObject(InputStream in)
-	 {
-		 XMLSerializer xmlSerializer = new XMLSerializer();
-		 JSON json=xmlSerializer.readFromStream(in);
-		 return JSONArray.fromObject(json);
-	 }
-	 public JSONArray getJSONObject(String xml)
-	 {
-		 XMLSerializer xmlSerializer = new XMLSerializer();
-		 JSON json=xmlSerializer.read(xml);
-		 return JSONArray.fromObject(json);
-	 }
+
 
 }
